@@ -26,7 +26,7 @@ spec:
   - name: path-context
     value: .
   - name: dockerfile
-    value: Dockerfile
+    value: docker/Dockerfile
   pipelineRef:
     bundle: quay.io/redhat-appstudio/hacbs-templates-bundle:latest
     name: docker-build
