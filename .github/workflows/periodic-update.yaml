@@ -15,9 +15,9 @@ jobs:
       run: date > timestamp.txt
     - name: Commit files
       run: |
-        git config --local user.email "github-actions-bot@users.noreply.github.com"
-        git config --local user.name "github-actions-bot"
-        git commit -a -m "Periodic update"
+        git config --local user.email "rbean@redhat.com"
+        git config --local user.name "Ralph Bean"
+        git commit -a -m "Automated periodic update"
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
       with:
