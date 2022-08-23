@@ -19,7 +19,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git commit -a -m "Periodic update"
     - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         branch: build-happy-path
